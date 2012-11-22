@@ -12,6 +12,8 @@
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
+		<link href='images/favicon.png' rel='shortcut icon' type='image/png'>
+
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/default.css" id="theme">
 
@@ -35,21 +37,148 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 
-				<section>
-					<h1>Git Einführung</h1>
-					<h3>auch für "Nicht-Entwickler" ;-)</h3>
-					<p>
-						<small>By <a href="http://beelbrecht.de">Benjamin Albrecht</a> / <a href="http://twitter.com/beelbrecht">@beelbrecht</a></small>
-					</p>
-				</section>
+<section>
+	<h1>Git Einführung</h1>
+	<h3>auch für "Nicht-Entwickler" ;-)</h3>
+	<img src="images/GitLogo.png" />
+</section>
 
+<section>
+	<h2>Benjamin Albrecht</h2>
+	<img src="images/BenjaminAlbrecht.jpg" style="float: left;"/>
+	<ul>
+		<li>Geschäftsführer der <a href="http://www.albit.de" target="_blank">albit</a> GmbH</li>
+		<li>Webworker mit SAP Vergangenheit</li>
+		<li>TYPO3 Fanboy</li>
+		<li>Im Netz als <a href="http://twitter.com/beelbrecht" target="_blank">@beelbrecht</a> unterwegs</li>
+		<li><a href="http://beelbrecht.de" target="_blank">beelbrecht.de</a></li>
+	</ul>
+</section>
 
+<section>
+	<h2>Git Fakten</h2>
+	<blockquote cite="http://de.wikipedia.org/wiki/Git">
+	Git ([ɡɪt], engl. Blödmann) ist eine freie Software zur verteilten Versionsverwaltung von Dateien, die ursprünglich für die Quellcode-Verwaltung des Linux-Kernels entwickelt wurde.
+	</blockquote>
+</section>
 
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
-				</section>
+<section>
+	<h2>Git Fakten</h2>
+	<ul>
+		<li>Website: <a href="http://git-scm.com" target="_blank">git-scm.com</a></li>
+		<li>2005 von Linus Torvalds entwickelt</li>
+		<li>verteilt</li>
+		<li>schnell (in C & Perl geschrieben)</li>
+		<li>populär (siehe Github)</li>
+		<li>nicht nur für Quelltext</li>
+		<li>verfügbar für Linux, OSX und Windows</li>
+	</ul>
+</section>
 
+<section>
+	<h2>lokales Repository / Verzeichnis</h2>
+	<pre><code>
+foobar/ <- lokales Projektverzeichnix
+|- .git/ <- lokales Repository
+|- index.html <- Arbeitskopie
+|- style.css
+|- readme.txt
+	</code></pre>
+	<p>Die Versionshistorie <br>liegt im "versteckten" .git-Verzeichnis</p>
+</section>
+
+<section>
+	<h2>Git Workflow</h2>
+	<div class="fragment">
+	<p>Repository erstellen:</p>
+	<pre><code>$ git init</code></pre>
+	</div>
+	<div class="fragment">
+	<p>Änderungen dem Index hinzufügen:</p>
+	<pre><code>$ git add style.css</code></pre>
+	</div>
+	<div class="fragment">
+	<p>Alles aus dem Index commiten:</p>
+	<pre><code>$ git commit -m 'initial commit'</code></pre>
+	</div>
+	<div class="fragment">
+	<p>ggf. Push & Pull:</p>
+	<pre><code>$ git push
+$ git pull</code></pre>
+	</div>
+</section>
+
+<section>
+	<h2>Die Git Ebenen</h2>
+
+	<h3 class="fragment">Workspace / Working Tree</h3>
+
+	<h3 class="fragment">Index / Staging Area</h3>
+
+	<h3 class="fragment">local Repository</h3>
+
+	<h3 class="fragment">remote Repository</h3>
+
+	<h3 class="fragment">Stash</h3>
+	
+	<p class="fragment">Git <a href="http://ndpsoftware.com/git-cheatsheet.html" target="_blank">CheatSheet</a> mit Veranschaulichung...</p>
+</section>
+
+<section>
+	<h2>Git Graphstruktur</h2>
+	<a href="images/GraphStruktur.png" target="blank"><img src="images/GraphStruktur.png" class="fragment" /></a>
+</section>
+
+<section>
+	<h2>Git branch / merge</h2>
+</section>
+
+<section>
+	<h2>Git Ignore</h2>
+	<p>Bestimmte Dateien sollen nicht mit versioniert werden!<p>
+	<p>Client-bezogen:<br>
+		<em>lokale Git Konfiguration</em></p>
+	<p>Projekt-bezogen:<br>
+		<em>.gitignore Datei (diese mit comitten)</em></p>
+</section>
+
+<section>
+	<h2>Git Reset / Revert / Checkout</h2>
+</section>
+
+<section>
+	<h2>Template</h2>
+</section>
+
+<section>
+	<h2>Tools</h2>
+	<ul>
+		<li>eingebaute GUI!</li>
+		<li><a href="http://msysgit.github.com/" target="_blank">Git for Windows</a></li>
+		<li>Tower (OSX Client)</li>
+		<li><a href="http://git-scm.com/downloads/guis" target="_blank">Sammlung auf git-scm.com</a></li>
+		<li><a href="http://delicious.com/matthew.mccullough/git+gui" target="_blank">Sammlung von Matthew McCullough</a></li>
+	</ul>
+</section>
+
+<section>
+	<h2>Links</h2>
+	<ul>
+		<li><a href="http://git-scm.com" target="_blank">git-scm.com</a></li>
+		<li><a href="http://ndpsoftware.com/git-cheatsheet.html" target="_blank">Git CheatSheet</a></li>
+		<li><a href="http://nvie.com/posts/a-successful-git-branching-model/" target="_blank">A successful Git branching model</a></li>
+		<li><a href="https://www.opensourcepress.de/index.php?26&tt_products=260" target="_blank">Git Buch</a> von "open source press"</li>
+	</ul>
+</section>
+
+<section data-state="alert">
+	<h2>Fragen?</h2>
+</section>
+
+<section data-state="soothe">
+	<h2>Danke!</h2>
+	<p>...und viel Spaß mit Git :-)</p>
+</section>
 			</div>
 
 		</div>
