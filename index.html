@@ -152,7 +152,25 @@ $ git checkout foobar</code></pre>
 </section>
 
 <section>
+	<div class="fragment">
 	<h2>Git Reset / Revert / Checkout</h2>
+	<p>Einzelne Commits rückgängig machen:</p>
+	<pre><code>$ git revert 3329661</code></pre>
+	</div>
+
+	<div class="fragment">
+	<p>Zweigspitze mit 'git reset' verschieben.<br>
+	'git reset' verschiebt den HEAD auf bestimmte Commits</p>
+	<p>Varianten:</p>
+	<pre><code>$ git reset --soft HEAD
+$ git reset --mixed HEAD^^
+$ git reset --hard 1.0.1</code></pre>
+	</div>
+
+	<div class="fragment">
+	<p>Bestimmte Commits auschecken</p>
+	<pre><code>$ git checkout 2.0.0</code></pre>
+	</div>
 </section>
 
 <section>
