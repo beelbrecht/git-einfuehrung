@@ -131,6 +131,15 @@ $ git pull</code></pre>
 
 <section>
 	<h2>Git branch / merge</h2>
+	<p>Erstellen von neuen "Zweigen" (branchen):</p>
+	<pre><code>$ git branch foobar
+$ git checkout foobar</code></pre>
+	<p>Alternativ:</p>
+	<pre><code>$ git checkout -b foobar</code></pre>
+
+	<p>Zwei Zweige verschmelzen (mergen):</p>
+	<pre><code>$ git merge foobar</code></pre>
+	<p>ACHTUNG: der angegebene Branch wird in den aktuellen "hineingezogen".</p>
 </section>
 
 <section>
@@ -143,11 +152,25 @@ $ git pull</code></pre>
 </section>
 
 <section>
+	<div class="fragment">
 	<h2>Git Reset / Revert / Checkout</h2>
-</section>
+	<p>Einzelne Commits rückgängig machen:</p>
+	<pre><code>$ git revert 3329661</code></pre>
+	</div>
 
-<section>
-	<h2>Template</h2>
+	<div class="fragment">
+	<p>Zweigspitze mit 'git reset' verschieben.<br>
+	'git reset' verschiebt den HEAD auf bestimmte Commits</p>
+	<p>Varianten:</p>
+	<pre><code>$ git reset --soft HEAD
+$ git reset --mixed HEAD^^
+$ git reset --hard 1.0.1</code></pre>
+	</div>
+
+	<div class="fragment">
+	<p>Bestimmte Commits auschecken</p>
+	<pre><code>$ git checkout 2.0.0</code></pre>
+	</div>
 </section>
 
 <section>
