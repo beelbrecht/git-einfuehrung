@@ -190,6 +190,37 @@ $ git reset --hard 1.0.1</code></pre>
 </section>
 
 <section>
+	<h2>Git Remote</h2>
+	<p>Ein Remote Repository enthält keinen Working Tree</p>
+	<p>Remote (Bare) Repository erstellen</p>
+	<pre><code>$ mkdir foobar.git
+$ cd foobar.git
+$ git init --bare</code></pre>
+</section>
+
+<section>
+	<h2>Git Remote / Repository URL</h2>
+	<p>Unterstützung mehrerer Protokolle</p>
+	<ul>
+		<li>/Repo/Pfad/foobar.git (Dateisystem)</li>
+		<li>https://github.com/beelbrecht/foobar.git</li>
+		<li>git://github.com/beelbrecht/foobar.git</li>
+		<li>ssh://git@github.com/beelbrecht/foobar.git</li>
+		<li>git@github.com:beelbrecht/foobar.git (SSH Kurzform)</li>
+	</ul>
+</section>
+
+<section>
+	<h2>Git Remote / Befehle</h2>
+	<p>Wichtige Befehle für remote Repositories:</p>
+	<pre><code>$ git remote</code></pre>
+	<pre><code>$ git clone</code></pre>
+	<pre><code>$ git pull</code></pre>
+	<pre><code>$ git fetch</code></pre>
+	<pre><code>$ git push</code></pre>
+</section>
+
+<section>
 	<h2>Tools</h2>
 	<ul>
 		<li>eingebaute GUI!</li>
