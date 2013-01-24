@@ -143,6 +143,21 @@ $ git checkout foobar</code></pre>
 </section>
 
 <section>
+	<h2>merge-Konflikt</h2>
+	<p>Konflikt bei Datei foobar.txt:</p>
+	<pre><code>Test eines Mergekonfliktes...
+<<<<<<< HEAD
+Bearbeitung durch Branch 1
+=======
+Bearbeitung durch Branch 2
+>>>>>>> 'zu mergender Branch'</code></pre>
+	<p>Manuelle Bearbeitung nötig!<br>
+	Anschließend folgendes mit aussagekräftiger commit-Message:</p>
+	<pre><code>$ git add foobar.txt
+$ git commit</code></pre>
+</section>
+
+<section>
 	<h2>Git Ignore</h2>
 	<p>Bestimmte Dateien sollen nicht mit versioniert werden!<p>
 	<p>Client-bezogen:<br>
