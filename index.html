@@ -192,7 +192,7 @@ $ git reset --hard 1.0.1</code></pre>
 <section>
 	<h2>Git Remote</h2>
 	<p>Ein Remote Repository enthält keinen Working Tree</p>
-	<p>Remote (Bare) Repository erstellen</p>
+	<p>Remote (Bare) Repository erstellen:</p>
 	<pre><code>$ mkdir foobar.git
 $ cd foobar.git
 $ git init --bare</code></pre>
@@ -208,6 +208,15 @@ $ git init --bare</code></pre>
 		<li>ssh://git@github.com/beelbrecht/foobar.git</li>
 		<li>git@github.com:beelbrecht/foobar.git (SSH Kurzform)</li>
 	</ul>
+</section>
+
+<section>
+	<h2>Git Remote</h2>
+	<p>Nutzung von "Remote Tracking Branches"</p>
+	<pre><code>$ git remote -a
+* master
+remotes/origin/master
+remotes/origin/develop</code></pre>
 </section>
 
 <section>
