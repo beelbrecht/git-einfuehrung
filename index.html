@@ -143,11 +143,27 @@ $ git checkout foobar</code></pre>
 </section>
 
 <section>
+	<h2>merge-Konflikt</h2>
+	<p>Konflikt bei Datei foobar.txt:</p>
+	<pre><code>Test eines Mergekonfliktes...
+<<<<<<< HEAD
+Bearbeitung durch Branch 1
+=======
+Bearbeitung durch Branch 2
+>>>>>>> 'zu mergender Branch'</code></pre>
+	<p>Manuelle Bearbeitung nötig!<br>
+	Anschließend folgendes mit aussagekräftiger commit-Message:</p>
+	<pre><code>$ git add foobar.txt
+$ git commit</code></pre>
+</section>
+
+<section>
 	<h2>Git Ignore</h2>
 	<p>Bestimmte Dateien sollen nicht mit versioniert werden!<p>
 	<p>Client-bezogen:<br>
 		<em>lokale Git Konfiguration</em></p>
 	<p>Projekt-bezogen:<br>
+		<em>.git/info/exclude (nur lokal)</em><br>
 		<em>.gitignore Datei (diese mit comitten)</em></p>
 </section>
 
@@ -171,6 +187,37 @@ $ git reset --hard 1.0.1</code></pre>
 	<p>Bestimmte Commits auschecken</p>
 	<pre><code>$ git checkout 2.0.0</code></pre>
 	</div>
+</section>
+
+<section>
+	<h2>Git Remote</h2>
+	<p>Ein Remote Repository enthält keinen Working Tree</p>
+	<p>Remote (Bare) Repository erstellen</p>
+	<pre><code>$ mkdir foobar.git
+$ cd foobar.git
+$ git init --bare</code></pre>
+</section>
+
+<section>
+	<h2>Git Remote / Repository URL</h2>
+	<p>Unterstützung mehrerer Protokolle</p>
+	<ul>
+		<li>/Repo/Pfad/foobar.git (Dateisystem)</li>
+		<li>https://github.com/beelbrecht/foobar.git</li>
+		<li>git://github.com/beelbrecht/foobar.git</li>
+		<li>ssh://git@github.com/beelbrecht/foobar.git</li>
+		<li>git@github.com:beelbrecht/foobar.git (SSH Kurzform)</li>
+	</ul>
+</section>
+
+<section>
+	<h2>Git Remote / Befehle</h2>
+	<p>Wichtige Befehle für remote Repositories:</p>
+	<pre><code>$ git remote</code></pre>
+	<pre><code>$ git clone</code></pre>
+	<pre><code>$ git pull</code></pre>
+	<pre><code>$ git fetch</code></pre>
+	<pre><code>$ git push</code></pre>
 </section>
 
 <section>
