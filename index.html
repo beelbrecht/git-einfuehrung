@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
 
 	<head>
 		<meta charset="utf-8">
@@ -12,7 +12,9 @@
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<link href='images/favicon.png' rel='shortcut icon' type='image/png'>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link href="images/favicon.png" rel="icon">
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/default.css" id="theme">
@@ -289,6 +291,39 @@ remotes/origin/develop</code></pre>
 			});
 
 		</script>
+
+				<!-- Everything below this point is unrelated to the slideshow -->
+
+		<div class="share-reveal" style="display: none; position: absolute; bottom: 10px; left: 10px; z-index: 20;">
+			<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;" href="http://beelbrecht.de/slides/git-einfuehrung"></a>
+
+			<a href="https://twitter.com/beelbrecht" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @beelbrecht</a>
+
+			<a href="http://twitter.com/share" class="twitter-share-button" data-text="Slides zur Git Einführung" data-url="http://beelbrecht.de/slides/git-einfuehrung" data-count="small" data-related="beelbrecht"></a>
+		</div>
+
+		<!-- Twitter Buttons -->
+		<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+		<!-- Flattr Button -->
+		<script type="text/javascript">
+			/* <![CDATA[ */
+    		(function() {
+        		var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+        		s.type = 'text/javascript';
+        		s.async = true;
+        		s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
+        		t.parentNode.insertBefore(s, t);
+    		})();
+			/* ]]> */
+		</script>
+
+		<script>
+			if( !navigator.userAgent.match( /iphone|ipod|android|ipad|blackberry/gi ) && !!document.querySelector ) {
+				document.querySelector( '.share-reveal' ).style.display = 'block';
+			}
+		</script>
+
 
 	</body>
 </html>
